@@ -1,0 +1,171 @@
+:root{
+    --red: #ff7a7a;
+    --green: #38cc8c;
+    --blue: #6055a5;
+    --dark-blue: #3e3c49;
+    --grayish-blue: #b9b6d3;
+}
+
+h2{
+    margin-top: 0;
+}
+
+p{
+    margin: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: var(--red) url(/images/bg-intro-mobile.png) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+}    
+
+main{
+    padding: 6em 1.5em;
+    text-align: center;
+}
+
+.container{
+    max-width: 69.7rem;
+}
+
+/* title */
+.title{
+    margin-bottom: 2rem;
+}
+
+/* trial-form */
+.trial-form{
+    max-width: 34rem;
+}
+
+
+/* trial-title */
+.trial-title{
+    padding: 1.625em 5em;
+    background-color: var(--blue);
+    border-radius: 10px;
+    height: 2.625rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.4);
+    margin-bottom: 2rem;
+}
+
+.trial-title span{
+    font-weight: bold;
+}
+
+.trial-title p{
+    font-size: .95rem;
+}
+
+
+/* regist-form */
+.regist-form {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.4);
+}
+
+.form-category{
+    width: 100%;
+    position: relative;
+}
+
+.regist-form #first-name{
+    margin-top: 0;
+}
+
+.regist-form input,
+button{
+    width: 100%;
+    height: 3.5rem;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;    
+}
+
+.error{
+    visibility: visible;
+}
+
+.error-icon{
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    display: none;
+}
+
+.error-alert.error{
+    color: var(--red);
+    text-align: end;
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.input-box{
+    box-sizing: border-box;
+    padding-left: 1.3rem;
+}
+
+input.error{
+    border: 2px solid var(--red);
+}
+
+/* clear the placeholder when error id triggered */
+input.error::placeholder {
+    opacity: 0;
+}
+
+.regist-form button{
+    background-color: var(--green);
+    color: #fff;
+    font-size: 1rem;
+    box-shadow: 0 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.regist-form button:hover{
+    cursor: pointer;
+}
+
+.regist-form button:active{
+    position: relative;
+    top: 4px;
+    box-shadow: none;
+    opacity: 0.8;
+}
+
+.terms{
+    color: var(--grayish-blue);
+    font-size: .65rem;
+    line-height: 2;
+    width: 80%;
+    margin-top: 1rem;
+}
+
+.regist-form span{
+    color: var(--red);
+}
+
+/* footer-site */
+.site-footer {
+    font-size: 11px;
+    text-align: center;
+    background-color: var(--grayish-blue);
+    padding: 10px;
+    font-size: 14px;
+    position: relative;
+}
+
+.site-footer a {
+    color: hsl(228, 45%, 44%);
+}

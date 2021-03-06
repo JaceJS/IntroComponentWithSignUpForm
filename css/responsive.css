@@ -1,0 +1,42 @@
+@media screen and (min-width: 62.5em){
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        font-family: 'Poppins', sans-serif;
+        background: var(--red) url(/images/bg-intro-desktop.png) no-repeat center;
+        background-size: cover;
+        color: #fff;
+        margin: 0;
+    }    
+
+    main{
+        padding: 10.375em 7.4em;
+        position: relative;
+        overflow: hidden;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container{
+        position: absolute;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .title h1{
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+}
