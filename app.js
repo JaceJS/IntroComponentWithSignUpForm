@@ -26,7 +26,7 @@ submitButton.addEventListener('click', e => {
     } else {
         lastName.classList.remove('error')
         document.getElementById('ln-error').classList.remove('error');
-        icon[0].style.display = 'none';
+        icon[1].style.display = 'none';
     }
 
     if (!emailAddress.value.match(regexPattern)) {
@@ -37,7 +37,7 @@ submitButton.addEventListener('click', e => {
     } else {
         emailAddress.classList.remove('error')
         document.getElementById('email-error').classList.remove('error');
-        icon[0].style.display = 'none';
+        icon[2].style.display = 'none';
     }
 
     if (password.value === '') {
@@ -48,6 +48,6 @@ submitButton.addEventListener('click', e => {
     } else {
         password.classList.remove('error')
         document.getElementById('pass-error').classList.remove('error');
-        icon[0].style.display = 'none';
+        icon[3].style.display = 'none';
     }
 });
